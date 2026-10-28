@@ -1,0 +1,26 @@
+═══════════════════════════════════════════════════════════════════
+ TRAVEL PLANNER API — PHASE 2 SETUP GUIDE
+ (Complete this in order; each step takes < 5 minutes)
+═══════════════════════════════════════════════════════════════════
+
+WHAT WORKS RIGHT NOW (NO KEYS NEEDED)
+──────────────────────────────────────
+✅ Live train search   — erail.in scraper (no key)
+✅ Weather forecast    — Open-Meteo API (no key, unlimited free)
+✅ Cost synthesis      — pure Python, 3-band output
+✅ EMI calculator      — reducing-balance formula
+⚠  Hotel rates        — reference estimates (need Amadeus key)
+✅ POI data           — OpenStreetMap Overpass API (no key, free)
+
+
+STEP 1 — AMADEUS (Hotel rates)  ~3 minutes
+───────────────────────────────────────────
+1. Go to: https://developers.amadeus.com
+2. Click "Register" → create free account
+3. Dashboard → My Apps → Create New App
+4. Copy "API Key" → paste as AMADEUS_CLIENT_ID in .env
+5. Copy "API Secret" → paste as AMADEUS_CLIENT_SECRET in .env
+6. Sandbox works immediately (test data).
+   Apply for Production when ready (1–2 day review).
+
+
